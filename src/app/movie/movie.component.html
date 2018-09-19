@@ -1,0 +1,15 @@
+<div class="card">
+
+  <div class="movie-card {{isHovering ? 'active' : ''}}" (mouseover)="mouseOver()" (mouseout)="mouseOut()">
+    <img src="{{model.poster_path}}" alt="" class="card-img-top">
+    <div class="movie-info">
+      <p>{{model.overview}}</p>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title">{{model.title}}</h5>
+    <p>Avg. rating: {{model.vote_average}}</p>
+  </div>
+
+</div>
